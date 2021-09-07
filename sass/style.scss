@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -135,7 +136,6 @@ body {
 
     &__information {
         padding-top: 85px;
-        padding-bottom: 35px;
         display: grid;
         grid-template-rows: 65px 200px 165px auto;
         row-gap: 50px;
@@ -190,17 +190,23 @@ body {
         }
         &-info {
             display: grid;
-            grid-template-columns: 300px 50px auto;
+            grid-template-columns: 300px 50px 100px;
             grid-template-rows: auto;
             align-items: center;
             justify-content: space-between;
-            padding-left: 20px;
+            // 
             font-style: italic;
             font-weight: 500;
             font-size: 14px;
             line-height: 18px;
             letter-spacing: 0.03em;
             color: #999999;
+        }
+        &-subtitle {
+            padding-left: 20px;
+        }
+        &-more {
+            text-align: right;
         }
         &-divider {
             width: 100%;
@@ -239,4 +245,19 @@ body {
             }
         }
     }
+    &__code {
+
+        &-wrapper {
+            margin-top: 10px;
+            padding: 20px 10px 20px 20px ;     
+            background-color:rgba(255, 157, 142, 0.5);                     
+            P {               
+                text-indent: 1.5em;
+                text-align: left;
+            }
+        }
+    } 
+}
+.code {
+    font-family: 'Inconsolata', monospace;
 }
