@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -13,12 +12,15 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
 }
-
+.shadow {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+}
 .cv {
     margin-top: 40px;
     margin-bottom: 40px;
     padding-left: 60px;
     padding-right: 60px;
+
     &__title {
         font-weight: 700;
         font-size: 22px;
@@ -88,7 +90,7 @@ body {
             }
         }
     }
-    &__skills-and-languges {
+    &__skills-and-languages {
         background-color: #C4C4C4;
         padding: 0 20px 30px 70px;
     }
@@ -246,18 +248,10 @@ body {
         }
     }
     &__code {
-
         &-wrapper {
             margin-top: 10px;
-            padding: 20px 10px 20px 20px ;     
+            padding:  0 20px ;     
             background-color:rgba(255, 157, 142, 0.5);                     
-            P {               
-                text-indent: 1.5em;
-                text-align: left;
-            }
         }
     } 
-}
-.code {
-    font-family: 'Inconsolata', monospace;
 }
