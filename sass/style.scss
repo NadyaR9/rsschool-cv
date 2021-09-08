@@ -7,10 +7,14 @@
 body {
     background-color: rgba(255, 157, 142, 0.5);
 }
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 1000px;
     margin: 0 auto;
     background-color: #ffffff;
+    position: relative;
 }
 .shadow {
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -20,7 +24,34 @@ body {
     margin-bottom: 40px;
     padding-left: 60px;
     padding-right: 60px;
-
+    
+    &__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        padding: 20px 40px;
+        background-color: #C4C4C4;
+        &-list {
+            list-style-type: none;
+        }
+        &-item {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            font-style: italic;
+            color: #333333;
+            
+            a {
+                color: #333333;
+                text-decoration: none ;
+                transition: all 0.5s;
+                &:hover {
+                    color: rgb(255, 157, 142);
+                }
+            }
+        }
+    }
     &__title {
         font-weight: 700;
         font-size: 22px;
@@ -169,6 +200,7 @@ body {
             position: absolute;
             bottom: -8px;
             left: 50%;
+            padding: 0 5px;
             transform: translateX(-50%);
             background-color: #ffffff;
             font-weight: 400;
@@ -273,8 +305,7 @@ body {
             justify-content: space-between;
             grid-template-rows: 150px;
             grid-auto-rows: auto;
-            figure {
-                
+            figure {           
                 img {
                     width: 100%;
                     height: 80%;
@@ -287,8 +318,7 @@ body {
                     }
                 }
             }
-            figcaption {
-                
+            figcaption {       
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 20px;
