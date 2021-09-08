@@ -1,12 +1,30 @@
-@media (max-width: 1400px) {
+
+@media (max-width: 1200px) {
     .container {
         width: 900px;
     }
-}
-@media (max-width: 1200px) {
-    .container {
-        width: 800px;
+    .wrapper {       
+        grid-template-columns: 310px 500px;
     }
+    .skills-and-languages {
+        width: 220px;
+    }
+    .rang {
+        &-item {
+            grid-template-columns: 100px 120px;
+        }
+    }
+    .hobbies {
+        width: 220px;
+    }
+    .introduce {
+        h4 {
+            left: 0;
+            padding: 0 5px;
+            transform: translateX(45%);
+        }
+    }
+
 }
 @media (max-width: 992px) {
     .container {
