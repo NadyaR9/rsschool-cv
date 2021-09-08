@@ -94,12 +94,15 @@ body {
     }
     &__skills-and-languages {
         background-color: #C4C4C4;
-        padding: 0 20px 30px 70px;
+        padding: 40px 20px 30px 70px;
         position: relative;
         z-index: 10;
     }
-    &__rang {
+    &__languages {
         padding-top: 40px;
+    }
+    &__rang {
+        list-style-type: none;
         &-counter {
             display: none;
         }
