@@ -36,6 +36,7 @@ body {
     &__aside {
         display: grid;
         grid-template-rows: 210px 200px 510px;
+        position: relative;
         &-line {
             position: absolute;
             top: 0;
@@ -63,6 +64,7 @@ body {
         grid-template-rows: repeat(4, 50px);
         justify-content: space-between;
         position: relative;
+        list-style-type: none;
         &-item {
             display: grid;
             grid-template-columns: 20px auto;
@@ -93,6 +95,8 @@ body {
     &__skills-and-languages {
         background-color: #C4C4C4;
         padding: 0 20px 30px 70px;
+        position: relative;
+        z-index: 10;
     }
     &__rang {
         padding-top: 40px;
