@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nadya Razinkova</title>
+    <link rel="stylesheet" href="css/default.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -170,18 +171,14 @@
                     </section>
                     <section class="cv__code">
                         <h2 class="cv__title">Code example</h2>
-                        <div class="cv__code-wrapper">
-                            <pre>
-                            <code>
-var isAnagram = function (test, original) {
+                        <pre>
+<code>var isAnagram = function (test, original) {
     let testSort = test.toLowerCase().split("").sort().join("");
     let originalSort = original.toLowerCase().split("").sort().join("");
     return testSort.length > originalSort.length ?
         testSort.includes(originalSort) :
         originalSort.includes(testSort);
-};</code>
-                        </pre>
-                        </div>
+};</code></pre>
                     </section>
                 </main>
             </div>
@@ -204,6 +201,8 @@ var isAnagram = function (test, original) {
             </footer>
         </div>
     </div>
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="js/script.js"></script>
 </body>
 
